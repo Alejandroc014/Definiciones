@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de sistemas.</title>
+    <link rel="stylesheet" href="https://www.ionos.es/digitalguide/servidores/know-how/sistemas-de-archivos/">
+    <style>
+        tbody {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>Nombre</strong></p>
+            </td>
+            <td>
+                <p><strong>Uso</strong></p>
+            </td>
+            <td>
+                <p><strong>Sistema operativo (compatibilidad)</strong></p>
+            </td>
+            <td>
+                <p><strong>Características</strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>FAT32</strong></p>
+            </td>
+            <td>
+                <p>Medios de almacenamiento extraíbles</p>
+            </td>
+            <td>
+                <p>- Windows</p>
+                <p>- Mac OS X/macOS</p>
+                <p>- Linux (si se instalan los correspondientes controladores)</p>
+            </td>
+            <td>
+                <p>- Alta compatibilidad</p>
+                <p>- Compatible con muchos tipos de <em>hardware</em></p>
+                <p>- Sin funciones de cifrado ni compresión</p>
+                <p>- No garantiza particularmente la seguridad de los datos</p>
+                <p>- Ideal para particiones más pequeñas</p>
+                <p>- Volumen máximo de datos: 4 GB</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>exFAT</strong></p>
+            </td>
+            <td>
+                <p>Medios de almacenamiento extraíbles</p>
+            </td>
+            <td>
+                <p>- Windows</p>
+                <p>- Mac OS X/macOS (compatible a partir de 10.6.4)</p>
+                <p>- Linux (si se instalan los correspondientes controladores)</p>
+            </td>
+            <td>
+                <p>- Aún no es un estándar generalizado</p>
+                <p>- No permite gestionar derechos</p>
+                <p>- No permite comprimir los datos</p>
+                <p>- Ideal para memorias <em>flash</em> más pequeñas, a partir de 32 GB (memorias USB, tarjetas SD)</p>
+                <p>- Tamaños y particiones ilimitados (según el estado actual de la tecnología)</p>
+                <p>- Volumen máximo de datos: 512 TB</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>NTFS</strong></p>
+            </td>
+            <td>
+                <p>Discos duros internos y externos</p>
+            </td>
+            <td>
+                <p>- Windows</p>
+                <p>- Mac OS X/macOS (de forma integral instalando un <em>software</em> adicional)</p>
+                <p>- Linux (instalando controladores)</p>
+            </td>
+            <td>
+                <p>- Gestión de derechos</p>
+                <p>- Mejora de la seguridad de los datos: protege contra la pérdida y la modificación de los datos;
+                    permite el cifrado</p>
+                <p>- Permite comprimir los datos;</p>
+                <p>alto rendimiento con medios de almacenamiento grandes</p>
+                <p>- Se especializa en archivos extensos y en grandes capacidades de almacenamiento</p>
+                <p>- Inadecuado para discos pequeños y particiones de menos de 400 MB (demasiada potencia)</p>
+                <p>- Volumen máximo de datos: 256 TB</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>APFS</strong></p>
+            </td>
+            <td>
+                <p>Unidades SSD</p>
+            </td>
+            <td>
+                <p>- macOS (el estándar desde la versión 10.13 High Sierra)</p>
+                <p>- Versiones anteriores de Mac OS y Windows (instalando un <em>software</em> adicional)</p>
+            </td>
+            <td>
+                <p>- Optimizado para unidades de estado sólido (SSD) y otros dispositivos de almacenamiento
+                    <em>flash</em></p>
+                <p>- También funciona en unidades mecánicas e híbridas</p>
+                <p>- Permite el cifrado de datos</p>
+                <p>- Optimiza la gestión del espacio de almacenamiento (función de espacio compartido)</p>
+                <p>- Función de protección contra bloqueos, que protege contra daños en el sistema de archivos (por
+                    ejemplo, en caso de caída del sistema)</p>
+                <p>- Compatible con Fusion Drive desde macOS 10.14 Mojave</p>
+                <p>- Volumen máximo de datos: 8 exbibytes</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>HFS+</strong></p>
+            </td>
+            <td>
+                <p>Discos duros internos y externos</p>
+            </td>
+            <td>
+                <p>Mac OS X/macOS</p>
+            </td>
+            <td>
+                <p>- Sistema de archivos maduro y probado</p>
+                <p>- Especialmente indicado para discos mecánicos</p>
+                <p>- No optimizado para tecnologías de almacenamiento modernas (SSD, <em>flash</em>)</p>
+                <p>- Mejor compatibilidad con versiones anteriores que APFS</p>
+                <p>- Vida útil limitada; probablemente deje de ser compatible con Apple a largo plazo</p>
+                <p>- Perderá importancia progresivamente debido a la “conversión forzada” y parcialmente automatizada a
+                    APFS</p>
+                <p>- Volumen máximo de datos: 8 exbibytes</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>ext4</strong></p>
+            </td>
+            <td>
+                <p>Linux</p>
+            </td>
+            <td>
+                <p>- Linux</p>
+                <p>- Windows (solo con <em>software</em> adicional)</p>
+                <p>- Mac OS X/macOS (solo con <em>software</em> adicional)</p>
+            </td>
+            <td>
+                <p>En comparación con versiones anteriores de ext:</p>
+                <p>- Mejora del rendimiento</p>
+                <p>- Mejora de la seguridad de los datos</p>
+                <p>- Incorpora cifrado (desde Linux Kernel 4.1)</p>
+                <p>- La nueva función <em>extents</em> aumenta la velocidad de procesamiento de archivos grandes y evita
+                    la fragmentación</p>
+                <p>- Gestión de derechos</p>
+                <p>- Volumen máximo de datos: 16 TB</p>
+            </td>
+        </tr>
+    </tbody>
+</body>
+</html>
